@@ -1,7 +1,7 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 ### Classifieds Project with CRUD & Search functionality ###
-### Instructions to Run the p
+### Instructions to Run the project
 
 1. Clone the repo
 2. composer install
