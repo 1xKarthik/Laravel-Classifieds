@@ -4,10 +4,12 @@
 ### Instructions to Run the project
 
 1. Clone the repo
-2. composer install
-3. npm install
-4. Then 'npm run dev' - Development Build
-4. Then 'npm run watch' - Watch with server reload
+2. Import the sql dump provided in the repo.
+3. change the DB settings in env in Laravel project root.
+4. composer install
+5. npm install
+6. Then 'npm run dev' - Development Build
+7. Then 'npm run watch' - Watch with server reload
 
 
 
