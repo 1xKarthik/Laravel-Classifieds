@@ -86,6 +86,10 @@
         <div class="row">
             <div class="col-md-3">
                 @section('sidebar')
+                    <form action="/search" method="get">
+                        <input type="text" name="searchString" class="form-control" placeholder="Search Listings..."/>
+                    </form>
+                    <br/>
                     <div class="list-group">
                         @foreach($categories as $category)
                             <a href="/categories/{{$category->id}}" class="list-group-item">{{$category->name}}</a>

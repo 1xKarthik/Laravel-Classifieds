@@ -10,6 +10,8 @@ use Auth;
 use App\Classified;
 use App\Commands\StoreClassifiedCommand;
 use Debugbar;
+use DB;
+use Illuminate\Support\Facades\Input;
 
 class ClassifiedsController extends Controller
 {
@@ -82,6 +84,13 @@ class ClassifiedsController extends Controller
     {
         $classified = Classified::find($id);
         return view('show', compact('classified'));
+    }
+
+    public function search()
+    {
+        $searchString = Input::get('searchString');
+        $classifieds = DB::table('classifieds')->where('title', 'Like', '%' . $searchString . '%')->get();
+        return view('index', compact('classifieds'));
     }
 
     /**

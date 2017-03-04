@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', 'ClassifiedsController@index');
-
 Auth::routes();
+
+Route::get('/', 'ClassifiedsController@index');
 
 Route::get('/home', 'HomeController@index');
 
@@ -22,3 +22,6 @@ Route::get('/welcome', 'HomeController@index');
 Route::resource('/classifieds', 'ClassifiedsController');
 
 Route::resource('/categories', 'CategoriesController');
+
+Route::get('/search', 'ClassifiedsController@search');
+
