@@ -1,6 +1,6 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+![laravel-logo-white.png](https://bitbucket.org/repo/6xLpor/images/3277705264-laravel-logo-white.png)
 
-<h5>Classifieds Project with CRUD & Search functionality</h5>
+### Classifieds Project with CRUD & Search functionality ###
 ### Instructions to Run the project
 
 1. Clone the repo
